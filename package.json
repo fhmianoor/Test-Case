@@ -1,0 +1,40 @@
+{
+  "name": "test-case",
+  "version": "1.0.0",
+  "description": "software engineer test case",
+  "homepage": "https://github.com/fhmianoor/Test-Case#readme",
+  "bugs": {
+    "url": "https://github.com/fhmianoor/Test-Case/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fhmianoor/Test-Case.git"
+  },
+  "license": "ISC",
+  "author": "Muhamad Fahmi Aulia Noor",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "seeder": "npx sequelize-cli db:seed:all",
+    "seeder:undo": "npx sequelize-cli db:seed:undo:all",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "nodemon": "^3.1.10",
+    "sequelize-cli": "^6.6.3"
+  }
+}
