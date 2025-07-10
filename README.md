@@ -175,3 +175,5 @@
 | admin  | ❌                   | ✅                    | ✅ (optional)     |
 | user   | ❌                   | ✅                    | ❌                |
 
+**Note:**
+- if you can't use it npm run migrate or other sequelize commands, you can use `npx sequelize-cli` instead.
